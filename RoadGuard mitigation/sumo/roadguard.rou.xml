@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="13.9" carFollowModel="Krauss"/>
+    <route id="route_ABD" edges="AB BD"/>
+    <route id="route_ACD" edges="AC CD"/>
+    <route id="route_CBA" edges="CB BA"/>
+    <route id="route_CDA" edges="CD DB BA"/>
+    <flow id="eastbound_main" type="car" route="route_ABD" begin="0" end="3600" vehsPerHour="900" departLane="best" departSpeed="max"/>
+    <flow id="northbound_cross" type="car" route="route_CBA" begin="0" end="3600" vehsPerHour="500" departLane="best" departSpeed="max"/>
+    <flow id="alternate_route" type="car" route="route_ACD" begin="0" end="3600" vehsPerHour="220" departLane="best" departSpeed="max"/>
+</routes>
